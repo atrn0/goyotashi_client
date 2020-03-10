@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'goyotashi',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Color(0xFFF3D167),
       ),
       home: HomePage(),
     );
