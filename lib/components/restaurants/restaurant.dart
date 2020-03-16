@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class Restaurant extends StatelessWidget {
   @override
@@ -17,6 +18,25 @@ class Restaurant extends StatelessWidget {
             },
             itemCount: 3,
           ),
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  'ひらがな館', // TODO: replace with real data
+                  style: TextStyle(fontSize: 25),
+                ),
+                Text('営業中'), // TODO: replace with real data
+              ],
+            ),
+            IconButton(
+              onPressed: () {}, // TODO: implement this
+              icon: Icon(Icons.map),
+            ),
+          ],
         ),
       ],
     );
