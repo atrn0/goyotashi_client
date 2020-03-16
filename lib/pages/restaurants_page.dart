@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:goyotashi_client/components/restaurants/header.dart';
+import 'package:goyotashi_client/components/restaurants/restaurants_list.dart';
 
 class RestaurantsPage extends StatelessWidget {
   @override
@@ -10,6 +11,7 @@ class RestaurantsPage extends StatelessWidget {
       body: Column(
         children: <Widget>[
           Header(),
+          RestaurantsList(),
         ],
       ),
     );
