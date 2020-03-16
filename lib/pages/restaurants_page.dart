@@ -1,12 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:goyotashi_client/components/restaurants/header.dart';
 
-class HomePage extends StatelessWidget {
+class RestaurantsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _appBar(context),
-      body: Text('Hello World!'),
+      body: Header(),
     );
   }
 
