@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
       onPressed: null, // TODO: implements this
       child: _circledImage(
           image: AssetImage(
-            'assets/images/home_icon_mock.jpg', // TODO: replace with real image
+            'assets/home_icon_mock.jpg', // TODO: replace with real image
           ),
           size: _size),
     );
