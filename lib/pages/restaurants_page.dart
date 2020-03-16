@@ -1,17 +1,17 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:goyotashi_client/components/restaurants/header.dart';
-import 'package:goyotashi_client/components/restaurants/restaurants_list.dart';
+import 'package:goyotashi_client/components/restaurants/restaurants_column.dart';
 
 class RestaurantsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _appBar(context),
-      body: Column(
+      body: ListView(
         children: <Widget>[
           Header(),
-          RestaurantsList(),
+          RestaurantsColumn(),
         ],
       ),
     );

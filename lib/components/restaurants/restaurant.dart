@@ -7,7 +7,7 @@ class Restaurant extends StatelessWidget {
     return Column(
       children: <Widget>[
         Container(
-          height: 200,
+          height: 150,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
@@ -16,7 +16,7 @@ class Restaurant extends StatelessWidget {
                 child: _restaurantImage(),
               );
             },
-            itemCount: 3,
+            itemCount: 10,
           ),
         ),
         Row(
