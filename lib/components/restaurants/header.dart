@@ -11,18 +11,24 @@ class Header extends StatelessWidget {
           icon: Icon(Icons.info_outline),
           onPressed: () {}, // TODO: implement this
         ),
-        RaisedButton(
-          color: Colors.white,
-          onPressed: () {}, // TODO: implement this
-          child: Row(
-            children: <Widget>[
-              Text(
-                'CAMPHOR-',
-                style: TextStyle(fontSize: 20),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: <Widget>[
+            RaisedButton(
+              color: Colors.white,
+              onPressed: () {}, // TODO: implement this
+              child: Row(
+                children: <Widget>[
+                  Text(
+                    'CAMPHOR-',
+                    style: TextStyle(fontSize: 20),
+                  ),
+                  Icon(Icons.keyboard_arrow_down),
+                ],
               ),
-              Icon(Icons.keyboard_arrow_down),
-            ],
-          ),
+            ),
+            Text('goyotashiのお店'),
+          ],
         ),
         IconButton(
           icon: Icon(Icons.share),

@@ -7,7 +7,11 @@ class RestaurantsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _appBar(context),
-      body: Header(),
+      body: Column(
+        children: <Widget>[
+          Header(),
+        ],
+      ),
     );
   }
 
