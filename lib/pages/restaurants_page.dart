@@ -39,10 +39,11 @@ class RestaurantsPage extends StatelessWidget {
     return FlatButton(
       onPressed: null, // TODO: implements this
       child: _circledImage(
-          image: AssetImage(
-            'assets/home_icon_mock.jpg', // TODO: replace with real image
-          ),
-          size: _size),
+        image: AssetImage(
+          'assets/home_icon_mock.jpg', // TODO: replace with real image
+        ),
+        size: _size,
+      ),
     );
   }
 
