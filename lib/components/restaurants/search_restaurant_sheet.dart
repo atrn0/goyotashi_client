@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:goyotashi_client/components/restaurants/restaurant_search_result.dart';
 import 'package:sticky_headers/sticky_headers/widget.dart';
 
 class SearchRestaurantSheet extends StatelessWidget {
@@ -37,6 +38,7 @@ class SearchRestaurantSheet extends StatelessWidget {
 
   _header(context) {
     return Container(
+      padding: EdgeInsets.only(bottom: 10),
       width: double.infinity,
       color: Colors.white,
       child: Column(
@@ -74,16 +76,12 @@ class SearchRestaurantSheet extends StatelessWidget {
   _searchResults() {
     return Column(
       children: <Widget>[
-        Text('restaurant1'),
-        Text('restaurant1'),
-        Text('restaurant1'),
-        Text('restaurant1'),
-        Text('restaurant1'),
-        Text('restaurant1'),
-        Text('restaurant1'),
-        Text('restaurant1'),
-        Text('restaurant1'),
-        Text('restaurant1'),
+        RestaurantSearchResult(),
+        RestaurantSearchResult(),
+        RestaurantSearchResult(),
+        RestaurantSearchResult(),
+        RestaurantSearchResult(),
+        RestaurantSearchResult(),
       ],
     );
   }
