@@ -18,7 +18,7 @@ class SearchRestaurantSheet extends StatelessWidget {
               child: Container(height: 40, color: Colors.white),
             ),
             StickyHeader(
-              header: _header(),
+              header: _header(context),
               content: _content(context),
             ),
           ],
@@ -35,12 +35,27 @@ class SearchRestaurantSheet extends StatelessWidget {
     );
   }
 
-  _header() {
+  _header(context) {
     return Container(
-      padding: EdgeInsets.all(30),
       width: double.infinity,
       color: Colors.white,
-      child: Text('hoge'),
+      child: Column(
+        children: <Widget>[
+          Text('お店を追加', style: TextStyle(fontSize: 30)),
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: Row(
+              children: <Widget>[
+                Expanded(child: TextField()),
+                FlatButton(
+                  onPressed: () {},
+                  child: Icon(Icons.search),
+                )
+              ],
+            ),
+          )
+        ],
+      ),
     );
   }
 
