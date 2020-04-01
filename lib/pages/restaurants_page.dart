@@ -8,10 +8,32 @@ class RestaurantsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _appBar(context),
-      body: ListView(
+      body: Stack(
         children: <Widget>[
-          Header(),
-          RestaurantsColumn(),
+          ListView(
+            children: <Widget>[
+              Header(),
+              RestaurantsColumn(),
+            ],
+          ),
+          Container(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+            color: Color(0xaaC4C4C4),
+          ),
+          ClipRRect(
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(40),
+              topRight: Radius.circular(40),
+            ),
+            child: Container(
+              padding: EdgeInsets.all(30),
+              height: double.infinity,
+              width: double.infinity,
+              color: Colors.white,
+              child: Text('hoge'),
+            )
+          )
         ],
       ),
     );
